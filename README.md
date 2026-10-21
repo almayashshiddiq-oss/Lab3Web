@@ -1,33 +1,16 @@
-# Praktikum 4 — CSS Dasar
+<img width="1275" height="579" alt="SS tgs pemerograman 2" src="https://github.com/user-attachments/assets/2affc282-4970-4661-8134-4da02f98c660" />
 
-Repository ini berisi latihan dasar HTML dan CSS untuk memahami properti CSS, selector elemen, ID, Class, serta prioritas deklarasi CSS.
 
-## Struktur Repository
-
-```text
-Praktikum-CSS/
-├── index.html
-├── style_eksternal.css
-├── Tugas pemerograman 4.html
-├── README.md
-└── media/
-```
-
-## Langkah Praktikum
-
-### 1. Membuka file HTML
-Buka `index.html` menggunakan editor kode seperti Visual Studio Code. File ini merupakan halaman utama untuk melihat penerapan CSS eksternal.
-
-### 2. Mengubah dan menambah properti CSS
+1. Mengubah dan menambah properti CSS
 Buka `style_eksternal.css`. Coba ubah nilai `background-color`, `color`, `font-size`, `padding`, `margin`, `border-radius`, dan `line-height`. Simpan file lalu muat ulang halaman di browser untuk melihat hasilnya.
 
-### 3. Mencoba selector `h1` dan `#intro h1`
+2. Mencoba selector `h1` dan `#intro h1`
 Selector `h1` menargetkan semua elemen `<h1>`, sedangkan `#intro h1` hanya menargetkan elemen `<h1>` di dalam elemen yang memiliki ID `intro`. Selector yang lebih spesifik biasanya menang untuk properti yang sama jika tidak ada aturan cascade lain yang mengalahkannya.
 
-### 4. Membandingkan CSS internal, eksternal, dan inline
+3.. Membandingkan CSS internal, eksternal, dan inline
 CSS internal ditulis di dalam tag `<style>`, CSS eksternal berada di file terpisah dan dihubungkan dengan `<link>`, sedangkan inline CSS ditulis pada atribut `style` di elemen HTML. Untuk deklarasi biasa pada properti yang sama, inline CSS umumnya lebih diprioritaskan daripada internal dan eksternal. `!important`, spesifisitas, dan urutan aturan juga memengaruhi hasil akhir.
 
-### 5. Membandingkan selector ID dan Class
+4. Membandingkan selector ID dan Class
 Elemen contoh pada halaman:
 
 ```html
@@ -38,21 +21,10 @@ Elemen contoh pada halaman:
 
 `#paragraf-1` adalah selector ID dan `.text-paragraf` adalah selector Class. ID memiliki spesifisitas lebih tinggi daripada Class untuk deklarasi biasa yang mengatur properti yang sama. Pada contoh di halaman, ID menentukan warna teks, sedangkan Class memberikan latar belakang dan garis di sisi paragraf.
 
-### 6. Menguji hasil di browser
-1. Simpan perubahan pada file HTML atau CSS.
-2. Buka `index.html` di browser.
-3. Muat ulang halaman setelah mengubah CSS.
-4. Amati perubahan tampilan dan coba ubah satu nilai setiap kali.
-5. Ambil screenshot hasil praktikum dan simpan di folder `media/` jika diperlukan.
 
-## Cara Menjalankan
 
-Tidak perlu instalasi tambahan. Unduh atau clone repository, kemudian buka `index.html` menggunakan browser.
 
-## Kesimpulan
-CSS digunakan untuk mengatur tampilan halaman HTML. Properti dan nilai CSS mengubah tampilan elemen, sedangkan selector menentukan elemen yang dikenai aturan. Hasil akhir dipengaruhi oleh cascade, spesifisitas, urutan deklarasi, dan `!important`.
-
-## 7. Eksperimen Mengubah dan Menambah Properti CSS
+5. Eksperimen Mengubah dan Menambah Properti CSS
 
 Pada bagian ini dilakukan eksperimen dengan mengubah nilai properti CSS dan menambahkan beberapa properti baru agar tampilan halaman web lebih menarik.
 
@@ -113,8 +85,7 @@ h1 i {
     background-color: #00bcd4;
 }
 ```
-
-### Hasil Eksperimen
+Hasil Eksperimen
 
 - `background-color` digunakan untuk mengubah warna latar belakang.
 - `font-size` digunakan untuk mengatur ukuran tulisan.
@@ -125,9 +96,9 @@ h1 i {
 - `box-shadow` digunakan untuk memberikan efek bayangan.
 - `:hover` digunakan untuk mengubah tampilan tombol ketika kursor diarahkan ke tombol tersebut.
 
-**Kesimpulan:** perubahan properti dan nilai CSS dapat mengubah warna, ukuran, jarak, serta tampilan elemen HTML tanpa harus mengubah struktur HTML-nya.
+Kesimpulan: perubahan properti dan nilai CSS dapat mengubah warna, ukuran, jarak, serta tampilan elemen HTML tanpa harus mengubah struktur HTML-nya.
 
-## 8. Perbedaan Deklarasi CSS `h1` dan `#intro h1`
+6. Perbedaan Deklarasi CSS `h1` dan `#intro h1`
 
 Kedua deklarasi tersebut memiliki perbedaan pada elemen HTML yang menjadi target CSS.
 
@@ -142,7 +113,7 @@ h1 {
 
 CSS tersebut berlaku untuk semua elemen `<h1>` di halaman, selama tidak ada aturan lain yang mengubah hasil tampilannya.
 
-### B. Selector `#intro h1`
+ B. Selector `#intro h1`
 
 ```css
 #intro h1 {
@@ -163,11 +134,11 @@ Contoh HTML:
 </div>
 ```
 
-**Hasil:** tulisan “Judul Utama” berwarna biru dan berukuran 24 px, sedangkan tulisan “Hello World” berwarna merah dan berukuran 30 px.
+Hasil: tulisan “Judul Utama” berwarna biru dan berukuran 24 px, sedangkan tulisan “Hello World” berwarna merah dan berukuran 30 px.
 
-**Kesimpulan:** selector `h1` menargetkan semua elemen `<h1>`, sedangkan `#intro h1` hanya menargetkan elemen `<h1>` di dalam elemen dengan ID `intro`. Selector `#intro h1` juga memiliki tingkat spesifisitas lebih tinggi daripada selector `h1`.
+Kesimpulan: selector `h1` menargetkan semua elemen `<h1>`, sedangkan `#intro h1` hanya menargetkan elemen `<h1>` di dalam elemen dengan ID `intro`. Selector `#intro h1` juga memiliki tingkat spesifisitas lebih tinggi daripada selector `h1`.
 
-## 9. Prioritas CSS Internal, Eksternal, dan Inline
+7. Prioritas CSS Internal, Eksternal, dan Inline
 
 Apabila CSS internal, eksternal, dan inline diterapkan pada elemen yang sama, CSS inline umumnya memiliki prioritas lebih tinggi daripada CSS internal dan eksternal biasa, dengan asumsi deklarasi lainnya memiliki tingkat kepentingan yang sama.
 
@@ -195,7 +166,7 @@ Contoh CSS inline:
 <h1 style="color: red;">Hello World</h1>
 ```
 
-**Hasil:** tulisan “Hello World” berwarna merah karena properti `color` ditentukan langsung melalui atribut `style` pada elemen HTML.
+Hasil: tulisan “Hello World” berwarna merah karena properti `color` ditentukan langsung melalui atribut `style` pada elemen HTML.
 
 Urutan prioritas secara umum:
 
@@ -203,11 +174,9 @@ Urutan prioritas secara umum:
 - Prioritas CSS internal dan eksternal ditentukan oleh spesifisitas, urutan deklarasi, dan penggunaan `!important`.
 - Jika tingkat kepentingan dan spesifisitas sama, aturan yang ditulis belakangan biasanya diterapkan.
 
-**Catatan:** CSS internal tidak selalu mengalahkan CSS eksternal hanya karena berada di dalam dokumen HTML. Keduanya mengikuti aturan cascade CSS.
+Kesimpulan: pada contoh di atas, inline CSS menghasilkan warna merah karena ditulis langsung pada elemen `<h1>`. Namun, deklarasi `!important`, spesifisitas, dan cascade dapat memengaruhi hasil akhir.
 
-**Kesimpulan:** pada contoh di atas, inline CSS menghasilkan warna merah karena ditulis langsung pada elemen `<h1>`. Namun, deklarasi `!important`, spesifisitas, dan cascade dapat memengaruhi hasil akhir.
-
-## 10. Prioritas Selector ID dan Class
+8. Prioritas Selector ID dan Class
 
 Diketahui elemen HTML berikut:
 
@@ -219,7 +188,7 @@ Diketahui elemen HTML berikut:
 
 Terdapat dua selector CSS yang menargetkan elemen tersebut.
 
-### A. Selector ID
+ A. Selector ID
 
 ```css
 #paragraf-1 {
@@ -261,4 +230,4 @@ Contoh tambahan:
 
 Dalam contoh tambahan ini, teks akan berwarna biru karena deklarasi Class menggunakan `!important`, sedangkan deklarasi ID tidak. Jadi, prioritas tidak hanya ditentukan oleh ID atau Class, tetapi juga oleh kepentingan deklarasi dan aturan cascade.
 
-**Kesimpulan:** jika selector ID dan Class sama-sama mengatur properti yang sama tanpa `!important`, selector ID akan menang karena tingkat spesifisitasnya lebih tinggi. Properti lain yang tidak bertentangan tetap dapat diterapkan dari selector Class.
+Kesimpulan: jika selector ID dan Class sama-sama mengatur properti yang sama tanpa `!important`, selector ID akan menang karena tingkat spesifisitasnya lebih tinggi. Properti lain yang tidak bertentangan tetap dapat diterapkan dari selector Class.
